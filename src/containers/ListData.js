@@ -18,7 +18,7 @@ function ListData() {
       const res = await axios.get(`http://starlord.hackerearth.com/gamesext`);
       const output = await res.data;
       const response = await output.filter((data) => {
-        return data.title.toString().toLowerCase().includes(query);
+        return data.title.toString().toLowerCase().includes(query.toLowerCase());
       });
       return setGameData(response);
     } catch (error) {
