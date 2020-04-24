@@ -6,6 +6,7 @@ function Head(props) {
       <h2>Some of the best Games in the world</h2>
       <hr className="border-secondary" style={{ maxWidth: "13rem" }}></hr>
       <hr className="border-secondary" style={{ maxWidth: "7rem" }}></hr>
+      
       <div className='float-right'>
         <span className="text-muted">Sort by Score:</span>{" "}
         <button onClick={props.sortAsc} className="btn btn-sm">
